@@ -55,7 +55,7 @@
   const statusDiv = document.getElementById('formStatus');
 
   // ⚠️ ЗАМЕНИТЕ НА СВОЙ URL ИЗ GOOGLE APPS SCRIPT
-  const SCRIPT_URL = 'hthttps://script.google.com/macros/s/AKfycbzb6ym0IomHUhugKgOzZXKSWJxiiqFAMABjUIRYLA513WjZWXKOa1Bcg5c8sgwCOrpg/exectps://script.google.com/macros/s/AKfycbwWKsFqYhPsG8v4L8IBQjX6z1JpDfIY_8l2Uq2FqJxH0y9K7aM/exec';
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzb6ym0IomHUhugKgOzZXKSWJxiiqFAMABjUIRYLA513WjZWXKOa1Bcg5c8sgwCOrpg/exec';
   
   function isDemoUrl(url) {
     return url.includes('AKfycbwWKsFqYhPsG8v4L8IBQjX6z1JpDfIY_8l2Uq2FqJxH0y9K7aM') || url === '';
