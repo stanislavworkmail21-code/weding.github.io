@@ -68,6 +68,11 @@
     const attendance = document.querySelector('input[name="attendance"]:checked')?.value || '';
     const message = document.getElementById('message').value.trim();
     
+    // 🍷 Сбор выбранных напитков
+    const alcoholCheckboxes = document.querySelectorAll('input[name="alcohol"]:checked');
+    const selectedAlcohols = Array.from(alcoholCheckboxes).map(cb => cb.value);
+    const alcoholString = selectedAlcohols.length ? selectedAlcohols.join(', ') : '(не выбрано)';
+    
     if (!name) {
       statusDiv.innerHTML = '<span class="error">Пожалуйста, укажите имя</span>';
       return;
@@ -82,6 +87,7 @@
     const formData = new FormData();
     formData.append('name', name);
     formData.append('attendance', attendance);
+    formData.append('alcohol', alcoholString);        // 👈 новое поле
     formData.append('message', message || '(без комментария)');
     formData.append('timestamp', new Date().toLocaleString('ru-RU'));
 

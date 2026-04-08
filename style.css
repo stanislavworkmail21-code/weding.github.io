@@ -283,7 +283,7 @@ label {
   color: #3f2e26;
 }
 
-input, textarea, .radio-group {
+input, textarea, .radio-group, .checkbox-group {
   width: 100%;
   padding: 0.8rem 1.2rem;
   font-size: 1rem;
@@ -307,7 +307,7 @@ textarea {
   min-height: 90px;
 }
 
-.radio-group {
+.radio-group, .checkbox-group {
   display: flex;
   gap: 1.5rem;
   border: none;
@@ -316,13 +316,14 @@ textarea {
   flex-wrap: wrap;
 }
 
-.radio-option {
+.radio-option, .checkbox-option {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.radio-option input[type="radio"] {
+.radio-option input[type="radio"],
+.checkbox-option input[type="checkbox"] {
   width: auto;
   accent-color: #b28b7a;
 }
